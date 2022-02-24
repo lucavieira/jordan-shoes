@@ -46,6 +46,7 @@
 
 header {
     background: url(../images/air-jordan-fundo-desktop.png) no-repeat;
+    background-size: cover;
 }
 
 header .container {
@@ -54,17 +55,95 @@ header .container {
 
 header .container .subtitle {
     width: 90%;
-    max-width: 420px;
+    max-width: 460px;
 
     margin: auto auto auto 10%;
-    padding: 125px 0px;
+    padding: 129px 0px 121px;
     color: white;
 }
 
 header .container .subtitle h2 {
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 19px;
 }
 
 header .container .subtitle p {
-    line-height: 36px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+main {
+    background-color: var(--color-light);
+}
+
+main .highlights {
+    text-align: center;
+    padding: 58px;
+}
+
+main .highlights h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+main .highlights p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-description);
+}
+
+main .container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    gap: 13px;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+main .container .cards {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-cards);
+    transition: transform 1s;
+}
+
+main .container .cards:hover{
+    transform: scale(1.1, 1.1);
+}
+
+footer {
+    background-color: var(--color-dark);
+    padding: 13px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-light);
+}
+
+@media (max-width: 500px) {
+    header {
+        background: url(../images/air-jordan-fundo-mobile.png) no-repeat;
+        background-size: cover;
+    }
+
+    header .container .subtitle h2, main .highlights h2 {
+        font-size: 28px;
+    }
+
+    header .container .subtitle p, main .highlights p {
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
