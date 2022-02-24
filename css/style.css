@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* COLORS */
+
+    --background-cards: #EBE9EA;
+    --color-text-dark: #181818;
+    --color-text-light: #F9F9F9;
+    --color-description: #474747;
+
+    /* FONTS */
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: url(../images/air-jordan-fundo-desktop.png);
+}
+
+.container {
+    background-color: #18181860;
+}
