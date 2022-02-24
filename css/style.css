@@ -5,8 +5,9 @@
     /* COLORS */
 
     --background-cards: #EBE9EA;
-    --color-text-dark: #181818;
-    --color-text-light: #F9F9F9;
+    --color-dark: #181818;
+    --color-dark-transparent: #18181880;
+    --color-light: #F9F9F9;
     --color-description: #474747;
 
     /* FONTS */
@@ -14,10 +15,56 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    background: url(../images/air-jordan-fundo-desktop.png);
+.offers {
+    background-color: var(--color-dark);
+
+    padding: 15px 0;
+    text-align: center;
 }
 
-.container {
-    background-color: #18181860;
+.offers a {
+    font-weight: 500;
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.offers a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    background-color: var(--color-light);
+
+    padding: 7px 0;
+    text-align: center;
+}
+
+.title h1 {
+    color: var(--color-dark);
+    font-size: 24px;
+}
+
+header {
+    background: url(../images/air-jordan-fundo-desktop.png) no-repeat;
+}
+
+header .container {
+    background-color: var(--color-dark-transparent);
+}
+
+header .container .subtitle {
+    width: 90%;
+    max-width: 420px;
+
+    margin: auto auto auto 10%;
+    padding: 125px 0px;
+    color: white;
+}
+
+header .container .subtitle h2 {
+    margin-bottom: 19px;
+}
+
+header .container .subtitle p {
+    line-height: 36px;
 }
