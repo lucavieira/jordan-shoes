@@ -45,12 +45,8 @@
 }
 
 header {
-    background: url(../images/air-jordan-fundo-desktop.png) no-repeat;
+    background: linear-gradient(#18181880, #18181880), url(../images/air-jordan-fundo-desktop.png) no-repeat;
     background-size: cover;
-}
-
-header .container {
-    background-color: var(--color-dark-transparent);
 }
 
 header .container .subtitle {
